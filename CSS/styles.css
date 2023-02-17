@@ -180,6 +180,8 @@ nav.navbar.navbar.navbar-dark{
     object-fit: cover;
     border-radius: 50%;
     object-position: center top;
+    border-color: #020202;
+    border-style: solid;
 }
 .categoria {
     display: flex;    
