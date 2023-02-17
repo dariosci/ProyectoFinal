@@ -52,3 +52,35 @@ box-shadow:none;
   margin-top: 10px;
   background: black;
 }
+
+@media print {
+  body.dark {
+    margin: 0;
+    padding: 0;
+    background: rgb(255, 255, 255);
+    color: #000000;
+  }
+    .container-datos.dark p.datosp {
+      color: rgb(0, 0, 0);
+    }
+  
+    .container-datosES.dark p.datosp {
+      color: rgb(0, 0, 0);
+    }
+  
+    .container-datosEXP.dark p.datos {
+      color: rgb(0, 0, 0);
+    }
+  
+    .container-datosEXP.dark p.datosp {
+      color: rgb(0, 0, 0);
+    }
+  
+    .container-datosHAB.dark p.datos {
+      color: rgb(0, 0, 0);
+    }
+  
+    .container-datosHAB.dark .skill-name {
+      color: rgb(0, 0, 0);
+    }
+}

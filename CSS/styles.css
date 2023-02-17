@@ -434,9 +434,16 @@ nav.navbar.navbar.navbar-dark{
     div.saltopagina {
         display: none;
     }
+    div.proyectonombre {
+        display: none;
+    }
 }
-
 @media print {
+    @page {
+        size: A4;
+        margin: 0;
+    }
+    
     div.saltopagina {
         display: block;
         page-break-before: always;
@@ -446,5 +453,25 @@ nav.navbar.navbar.navbar-dark{
     }
     .footer{
         display: none;
+    }
+    .header{
+        display: none;
+    }
+    div.proyectonombre{
+        display:block;
+        margin-left: 5%;
+        padding: 0%;
+        
+    }
+    .encabezadoCV1 {
+        font-size: 60px;
+        color: #020202;
+        font-weight: 300;
+    }
+
+    .encabezadoCV2 {
+        font-size: 60px;
+        color: var(--gold1);
+        font-weight: 700;
     }
 }
