@@ -429,3 +429,22 @@ nav.navbar.navbar.navbar-dark{
     left: unset;
     right: 0;
 }
+
+@media all {
+    div.saltopagina {
+        display: none;
+    }
+}
+
+@media print {
+    div.saltopagina {
+        display: block;
+        page-break-before: always;
+    }
+    div.tablaexp {
+        margin-top: 10%;
+    }
+    .footer{
+        display: none;
+    }
+}
