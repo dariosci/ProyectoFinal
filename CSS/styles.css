@@ -509,4 +509,7 @@ textarea {
         color: var(--gold1);
         font-weight: 700;
     }
+    .contacto-print{
+        display: none;
+    }
 }
