@@ -27,6 +27,7 @@
         
         <!-- Font Awesome -->
         <script src="https://kit.fontawesome.com/27914132db.js" crossorigin="anonymous"></script>
+        
     </head>
 
     <body id="page-top" class="todo">
@@ -52,6 +53,9 @@
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link js-scroll-trigger lead" href="#linkconocimientos">Habilidades</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link js-scroll-trigger lead" href="#linkcontacto"><b>Contacto</b></a>
                             </li>
                         </ul>
                         <button class="darkModeSwitch ms-2 fixed-right" id="switch">
@@ -183,7 +187,7 @@
                                     </div>
                                     <div class="col-9 p-1 mb-1">
                                         <p class="datosp cabecera textoizq"><b>Puesto</b></span></p>
-                                    </div>                                        
+                                    </div>
                                     <div class="col-2 p-1 mb-1"">
                                         <p class=" datosp"><span id="fecha1"></span></p>
                                     </div>
@@ -198,19 +202,19 @@
                                     </div>
                                     <div class="col-2 p-1 mb-1"">
                                         <p class=" datosp"><span id="fecha3"></span></p>
-                                    </div>                                        
+                                    </div>
                                     <div class="col-9 p-1 mb-1">
                                         <p class="datosp textoizq"><span id="puesto3"></span></p>
                                     </div>
                                     <div class="col-2 p-1 mb-1"">
                                         <p class=" datosp"><span id="fecha4"></span></p>
-                                    </div>                                        
+                                    </div>
                                     <div class="col-9 p-1 mb-1">
                                         <p class="datosp textoizq"><span id="puesto4"></span></p>
                                     </div>
                                     <div class="col-2 p-1 mb-1"">
                                         <p class=" datosp"><span id="fecha5"></span></p>
-                                    </div>                                        
+                                    </div>
                                     <div class="col-9 p-1 mb-1">
                                         <p class="datosp textoizq"><span id="puesto5"></span></p>
                                     </div>
@@ -229,22 +233,20 @@
                             </div>
                         </div>
                         <article class="container-datosHAB" id="container-datosHAB">
-                            <p class="datos">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur dolore veritatis ratione?
-                            Perspiciatis officia minus dolorem molestiae mollitia? A facere porro voluptate aliquid eum itaque.
-                            Laboriosam enim vitae inventore veniam?</p>
+                            <p class="datos">Lorem ipsum dolor sit amet consectetur adipisicing elit. Est exercitationem veniam, nisi voluptatibus sequi asperiores eaque cupiditate suscipit, facilis nesciunt quod? Magni saepe ea quam id optio facere ipsum quidem placeat, officia asperiores laboriosam quaerat perferendis animi consequatur aperiam earum nulla possimus iure illum deserunt. Commodi rem ex placeat saepe.</p>
                             <div class="skills">
                                 <div id="skill2-main" class="skill">
                                     <div id="skill2-name" class="skill-name"></div>
                                     <div class="skill-bar">
                                         <div id="skill2" class="skill-per" per="" style="max-width:0%"></div>
                                     </div>
-                                </div>                                
+                                </div>
                                 <div id="skill3-main" class="skill">
                                     <div id="skill3-name" class="skill-name"></div>
                                     <div class="skill-bar">
                                         <div id="skill3" class="skill-per" per="" style="max-width:0%"></div>
                                     </div>
-                                </div>                                
+                                </div>
                                 <div id="skill4-main" class="skill">
                                     <div id="skill4-name" class="skill-name"></div>
                                     <div class="skill-bar">
@@ -252,6 +254,37 @@
                                     </div>
                             </div>
                         </article>
+                    </div>
+                </section>
+                <section id="linkcontacto" class="py-5">
+                    <div class="container">
+                        <div container class="categoria border-bottom">
+                            <div class="categoria_icono">
+                                <i class="fa-solid fa-message"></i>
+                                <h2 class="title">Contacto</h2>
+                            </div>
+                        </div>
+                        <div class="formulario-contacto-contenedor">
+                            <div id="formulario-contacto" class="formulario-contacto">
+                                <form>
+                                    <div class="control-formulario">
+                                        <label for="name" class="datosp"><b>Nombre:</b></label>
+                                        <input type="text" id="name" name="sender-name" placeholder="Escribe tu nombre" class="input-field" required />
+                                    </div>
+                                    <div class="control-formulario">
+                                        <label for="email" class="datosp"><b>Correo Electrónico:</b></label>
+                                        <input type="email" id="email" name="sender-email" placeholder="Ingreso tu correo electrónico" class="input-field"
+                                            required />
+                                    </div>
+                                    <div class="control-formulario">
+                                        <label for="mensaje" class="datosp"><b>Mensaje:</b></label>
+                                        <textarea id="mensaje" cols="60" rows="10" placeholder="Escribe tu mensaje" name="mensaje" class="input-field"
+                                            required></textarea>
+                                    </div>
+                                    <input type="submit" value="Enviar" id="submit-btn" class="btn btn-primary" />
+                                </form>
+                            </div>
+                        </div>
                     </div>
                 </section>
             </main>
@@ -270,6 +303,7 @@
                         var elementcontenido2 = document.getElementById("container-datosES")
                         var elementcontenido3 = document.getElementById("container-datosEXP")
                         var elementcontenido4 = document.getElementById("container-datosHAB")
+                        var elementcontenido5 = document.getElementById("formulario-contacto")
                         var elementimprimir = document.getElementById("btn-imprimir")
 
                         document.body.classList.toggle('dark');
@@ -278,6 +312,7 @@
                         elementcontenido2.classList.toggle('dark');
                         elementcontenido3.classList.toggle('dark');
                         elementcontenido4.classList.toggle('dark');
+                        elementcontenido5.classList.toggle('dark');
                         elementimprimir.classList.toggle('dark')
                         switchButton.classList.toggle('active');
                     });

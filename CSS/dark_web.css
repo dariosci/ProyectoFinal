@@ -52,6 +52,10 @@ box-shadow:none;
   margin-top: 10px;
   background: black;
 }
+.formulario-contacto.dark label{
+  color: ghostwhite;
+}
+
 
 @media print {
   body.dark {

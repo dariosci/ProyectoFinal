@@ -231,7 +231,15 @@ nav.navbar.navbar.navbar-dark{
     margin-right: 10px;
     font-size: 40px;
 }
-
+.fa-message{
+    display: inline-block;
+    width: 54px;
+    height: 46px;
+    text-align: center;
+    align-items: center;
+    margin-right: 10px;
+    font-size: 40px;
+}
 .fa-screwdriver-wrench {    
     display: inline-block;
     width: 50px;
@@ -316,6 +324,25 @@ nav.navbar.navbar.navbar-dark{
     right: 0;
     transform: translateX(50%) rotate(45deg);
     border-radius: 2px;
+}
+
+form {
+    width: 90%;
+    margin: 0 auto;
+    text-align: left;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 12px 20px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 16px;
 }
 
 @keyframes fillBars {
