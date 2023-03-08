@@ -68,7 +68,7 @@ fetch(url2)
     document.getElementById('link5').href = comprobar_linkcurso(`${data2[numerosEst[4]].course_link}`, 5)
 }
 
-//Trae las skills del json (experiencias.json)
+//Trae las skills del json (experiencias.json)..
 fetch(url3)
     .then((response) => response.json())
     .then(data3=> llenar_barras(data3))
